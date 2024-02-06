@@ -71,7 +71,7 @@ export class MyCard extends LitElement {
 
   static get properties() {
     return {
-      title: { type: String },
+      title: { type: String},
     };
   }
 }
