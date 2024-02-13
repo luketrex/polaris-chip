@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -33,13 +34,46 @@
   <!-- this is going to take the tag and change the title -->
   <polaris-chip title="Cool stuff"></polaris-chip>
 
+  
+  
   <h1>my-card</h1>
-  <my-card></my-card>
+  <button class="cardbtn" id="duplicate">Duplicate Last Card</button>
+  <button class="cardbtn" id="changetitle">Change Title</button>
+  <button class="cardbtn" id="changeimage">Change Image </button>
+  <button class="cardbtn" id="changebg">Change Color</button>
+  <button class="cardbtn" id="delete">Delete Last Card</button>
+
+ <div class="cardlst">
+  <my-card 
+  title ="happy birthday son"
+  description = "Wishing you a day filled with joy and celebration my son"
+  img = "https://th.bing.com/th/id/OIP.Tc1XQe5_lbOnOjmV2FHaegHaLi?rs=1&pid=ImgDetMain"
+  bgColor = "orange"
+  ></my-card>
+
+  <my-card title = "joes shed"
+  description = "hey this is joes shed"
+  img = https://iugonzlive.blob.core.windows.net/products/cb186007-e830-4479-856e-0fd74eaf109b
+  bgColor = "purple"
+  ></my-card>
+
+  <my-card fancy
+  title ="jamal demarcus the 3rd"
+  description = "Quote: ' Yo wassup its me jamal demarcus'"
+  img = "https://i.kym-cdn.com/photos/images/original/001/857/763/672.jpg"
+  bgColor = "black"
+  ><slot><strong>Quote:</strong></slot>"yo what up its me jamal demarcus</my-card>
+</div>
+
+  
   
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
   <script type="module" src="./src/my-card.js"></script>
-</body>
 
+  <script>
+
+  </script>
+</body>
 </html>
