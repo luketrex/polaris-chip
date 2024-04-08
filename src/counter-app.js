@@ -110,14 +110,16 @@ export class CounterApp extends LitElement {
   
     render() {
       return html`
+        <confetti-container id="confetti">
         <div class="box" style="--background-color: white">
         <div class= "counter-number">${this.value}</div>
-        <confetti-container id="confetti"></confetti-container>
+     
         <div class="btn-wrapper">
             <button class="btnup" @click="${this.increase}" ?disabled="${this.value === this.max}">+</button>
             <button class="btndown" @click="${this.decrease}" ?disabled="${this.value === this.max}">-</button>
           </div>
     </div>
+    </confetti-container>
       `;
     }
   
